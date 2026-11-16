@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — pequenas expressões, grandes sentimentos",
-  "meta.description": "Copie um pouquinho de alegria. Emoticons, símbolos e kaomojis em um só lugar.",
+  "meta.title": "cutemoji | Copie emoticons e kaomojis",
+  "meta.description": "Copie 3.360 emoticons de texto e kaomojis. Explore por emoção, salve favoritos e adicione seus próprios emoticons no MY. Grátis e sem cadastro.",
   "settings.title": "Configurações",
   "a11y.categories": "Categorias",
   "a11y.navigation": "Menu principal",
@@ -100,5 +100,8 @@
   "support.toss": "Transferir com Toss",
   "support.tossHelp": "Toque para copiar o número da conta e abrir o Toss. Se não funcionar, use o botão de copiar abaixo.",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "Sobre e ajuda",
+  "info.privacy": "Privacidade",
+  "info.contact": "Contato"
 }

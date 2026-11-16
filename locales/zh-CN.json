@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — 小小表情，满满心意",
-  "meta.description": "复制一份可爱心情。表情、特殊符号和颜文字，尽在这里。",
+  "meta.title": "cutemoji | 复制可爱颜文字与特殊符号",
+  "meta.description": "轻松复制3,360个可爱颜文字和特殊符号。按心情浏览、收藏、查看最近使用记录，并在MY中添加自己的表情，无需注册。",
   "settings.title": "设置",
   "a11y.categories": "分类",
   "a11y.navigation": "主菜单",
@@ -100,5 +100,8 @@
   "support.toss": "通过 Toss 转账",
   "support.tossHelp": "点击将尝试复制账号并打开 Toss。如未成功，请使用下方复制按钮。",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "介绍与帮助",
+  "info.privacy": "隐私说明",
+  "info.contact": "联系我们"
 }

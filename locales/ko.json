@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — 작은 표정, 커다란 마음",
-  "meta.description": "작고 귀여운 마음을 복사하세요. 이모티콘, 특수문자, 카오모지 모음 cutemoji.",
+  "meta.title": "cutemoji 큐트모지 | 귀여운 특수문자 이모티콘 복사",
+  "meta.description": "귀여운 특수문자 이모티콘과 카오모지 3,360개를 간편하게 복사하세요. 감정별 분류, 즐겨찾기, 최근 사용, 나만의 MY 이모티콘을 지원하는 무료 웹앱입니다.",
   "settings.title": "설정",
   "a11y.categories": "카테고리",
   "a11y.navigation": "메인 메뉴",
@@ -100,5 +100,8 @@
   "support.toss": "토스로 송금하기",
   "support.tossHelp": "누르면 계좌번호 복사와 토스 앱 열기를 함께 시도해요. 안 되면 아래 복사 버튼을 이용해 주세요.",
   "support.kakao": "카카오페이",
-  "support.bankKakao": "카카오뱅크"
+  "support.bankKakao": "카카오뱅크",
+  "info.guide": "소개·사용 방법",
+  "info.privacy": "개인정보 안내",
+  "info.contact": "문의"
 }

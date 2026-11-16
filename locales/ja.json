@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — 小さな表情、大きな気持ち",
-  "meta.description": "かわいい気持ちをコピー。顔文字や特殊文字をひとつに。",
+  "meta.title": "cutemoji | かわいい顔文字・特殊文字をコピー",
+  "meta.description": "かわいい顔文字や特殊文字3,360件を簡単コピー。気分別の分類、お気に入り、最近使った顔文字、MYへの追加が使える無料ウェブアプリです。",
   "settings.title": "設定",
   "a11y.categories": "カテゴリー",
   "a11y.navigation": "メインメニュー",
@@ -100,5 +100,8 @@
   "support.toss": "Tossで送金",
   "support.tossHelp": "タップすると口座番号のコピーとTossアプリの起動を試みます。うまくいかない場合は下のコピーボタンをご利用ください。",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "紹介・使い方",
+  "info.privacy": "プライバシー",
+  "info.contact": "お問い合わせ"
 }

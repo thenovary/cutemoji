@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — biểu cảm nhỏ, cảm xúc lớn",
-  "meta.description": "Sao chép một chút niềm vui. Biểu tượng cảm xúc, ký tự và kaomoji ở cùng một nơi.",
+  "meta.title": "cutemoji | Sao chép biểu cảm và kaomoji",
+  "meta.description": "Sao chép 3.360 biểu cảm bằng ký tự và kaomoji. Duyệt theo cảm xúc, lưu mục yêu thích và thêm biểu cảm riêng vào MY. Miễn phí, không cần tài khoản.",
   "settings.title": "Cài đặt",
   "a11y.categories": "Danh mục",
   "a11y.navigation": "Điều hướng chính",
@@ -100,5 +100,8 @@
   "support.toss": "Chuyển tiền bằng Toss",
   "support.tossHelp": "Nhấn để sao chép số tài khoản và mở Toss. Nếu không được, hãy dùng nút sao chép bên dưới.",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "Giới thiệu và hướng dẫn",
+  "info.privacy": "Quyền riêng tư",
+  "info.contact": "Liên hệ"
 }

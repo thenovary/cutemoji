@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — สีหน้าเล็ก ๆ แทนความรู้สึกมากมาย",
-  "meta.description": "คัดลอกความน่ารัก รวมอีโมติคอน สัญลักษณ์ และคาโอโมจิไว้ในที่เดียว",
+  "meta.title": "cutemoji | คัดลอกอีโมติคอนและคาโอโมจิ",
+  "meta.description": "คัดลอกอีโมติคอนและคาโอโมจิ 3,360 แบบ เลือกตามอารมณ์ บันทึกรายการโปรด ดูรายการล่าสุด และเพิ่มแบบของตัวเองใน MY ใช้ฟรีโดยไม่ต้องสมัครสมาชิก",
   "settings.title": "การตั้งค่า",
   "a11y.categories": "หมวดหมู่",
   "a11y.navigation": "เมนูหลัก",
@@ -100,5 +100,8 @@
   "support.toss": "โอนด้วย Toss",
   "support.tossHelp": "แตะเพื่อคัดลอกเลขบัญชีและเปิด Toss หากไม่สำเร็จ ให้ใช้ปุ่มคัดลอกด้านล่าง",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "เกี่ยวกับและวิธีใช้",
+  "info.privacy": "ความเป็นส่วนตัว",
+  "info.contact": "ติดต่อ"
 }

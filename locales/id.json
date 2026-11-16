@@ -1,6 +1,6 @@
 {
-  "meta.title": "cutemoji — ekspresi kecil, perasaan besar",
-  "meta.description": "Salin sedikit kebahagiaan. Emotikon, simbol, dan kaomoji di satu tempat.",
+  "meta.title": "cutemoji | Salin emotikon dan kaomoji lucu",
+  "meta.description": "Salin 3.360 emotikon teks dan kaomoji. Jelajahi berdasarkan suasana hati, simpan favorit, dan tambahkan emotikon sendiri di MY. Gratis tanpa akun.",
   "settings.title": "Pengaturan",
   "a11y.categories": "Kategori",
   "a11y.navigation": "Navigasi utama",
@@ -100,5 +100,8 @@
   "support.toss": "Kirim lewat Toss",
   "support.tossHelp": "Ketuk untuk menyalin nomor rekening dan membuka Toss. Jika gagal, gunakan tombol salin di bawah.",
   "support.kakao": "Kakao Pay",
-  "support.bankKakao": "KakaoBank"
+  "support.bankKakao": "KakaoBank",
+  "info.guide": "Tentang & bantuan",
+  "info.privacy": "Privasi",
+  "info.contact": "Kontak"
 }
