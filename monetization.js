@@ -27,7 +27,7 @@ window.CutemojiMonetization = (() => {
  }
  // Keep existing ad DOM in place when favorites, categories or pagination rerender cards.
  function prepare(count){
-  const needed=(allowed()||preview)?Math.floor(count/15):0,grid=document.querySelector('#grid');
+  const needed=(allowed()||preview)&&count>0?Math.max(1,Math.floor(count/15)):0,grid=document.querySelector('#grid');
   while(slots.length<needed){const host=document.createElement('aside');host.className='infeed-ad';host.setAttribute('aria-label','Advertisement');const slot={host,requested:false,pending:false,failed:false};slots.push(slot);grid.append(host);
    if(preview){host.classList.add('infeed-preview');const label=document.createElement('small'),title=document.createElement('strong'),desc=document.createElement('p');label.textContent=I18n.t('ads.preview');title.textContent='cutemoji';desc.textContent=I18n.t('ads.description');host.append(label,title,desc)}else observer.observe(host);
   }
