@@ -1,5 +1,5 @@
 const PREFIX='cutemoji-'+encodeURIComponent(self.registration.scope)+'-';
-const CACHE=PREFIX+'v29';
+const CACHE=PREFIX+'v30';
 const ASSETS=['./info.js?v=28','./page-content.json?v=28','./guide.html','./privacy.html','./info.css?v=25','./','./index.html','./support.html','./support.css?v=26','./support.js?v=26','./style.css?v=29','./backup.js?v=25','./app.js?v=25','./site-config.js?v=28','./monetization.js?v=28','./i18n.js?v=25','./locales/languages.json','./locales/ko.json','./locales/en.json','./locales/ja.json','./locales/zh-CN.json','./locales/zh-TW.json','./locales/es.json','./locales/pt-BR.json','./locales/de.json','./locales/it.json','./locales/fr.json','./locales/th.json','./locales/vi.json','./locales/id.json','./data.js?v=25','./manifest.webmanifest','./share-image.png','./apple-touch-icon.png','./favicon-16x16.png','./favicon-32x32.png','./favicon-48x48.png','./favicon-96x96.png','./icon-192.png','./icon-512.png'];
 const urls=new Set(ASSETS.map(p=>new URL(p,self.registration.scope).href));
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});
