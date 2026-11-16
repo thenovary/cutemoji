@@ -13,3 +13,5 @@ html[lang=th] .categories button{line-height:1.65;padding-block:6px}html[lang=th
 #settings-dialog .backup-note{margin-top:24px;line-height:1.8;color:#aaa5b1}
 
 #support-link[hidden],.ad-preview[hidden]{display:none}#support-link{text-decoration:none}.ad-preview{margin:36px 0 40px;padding:18px 0;border-top:1px solid #eeeef3;color:#92909b}.ad-label{display:block;font-size:10px;margin-bottom:12px;color:#aaa5b1}.ad-preview-content{display:flex;align-items:center;gap:14px}.ad-thumbnail{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:8px;background:#f7f6fa;color:#b9afce;font-size:25px}.ad-preview strong{font-size:13px;font-weight:500}.ad-preview p{font-size:11px;line-height:1.7;margin:5px 0 0}
+
+.info-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;padding:20px 0 26px;font-size:11px;line-height:1.8}.info-links a{color:#8c849b;text-decoration:none}.info-links a:hover{text-decoration:underline}.info-links a:focus-visible{outline:2px solid #8270b9;outline-offset:3px}#settings-dialog .info-links{padding-bottom:0;margin-top:12px}.noscript-note{padding:12px 20px;margin:0;background:#faf9fd;font-size:13px}
