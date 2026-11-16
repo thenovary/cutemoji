@@ -11,7 +11,7 @@ window.CutemojiMonetization = (() => {
   observer.observe(host);
   new MutationObserver(()=>{if(!document.querySelector('dialog[open]'))requestIfVisible()}).observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
  }
- function allowed(){const a=window.CutemojiConfig?.ads;return !local&&location.protocol==='https:'&&a?.enabled===true&&a?.consentReady===true}
+ function allowed(){const a=window.CutemojiConfig?.ads;return !local&&location.protocol==='https:'&&a?.enabled===true&&a?.consentReady===true&&a.hosts?.includes(location.hostname)}
  function requestIfVisible(){const host=document.querySelector('#infeed-ad'),root=document.querySelector('.results');if(host.hidden)return;const r=host.getBoundingClientRect(),v=root.getBoundingClientRect();if(r.top<v.bottom+160&&r.bottom>v.top)requestAd()}
  function requestAd(){
   if(requested||failed||!eligible||!allowed()||document.querySelector('dialog[open]'))return;

@@ -13,12 +13,12 @@
   }
   body.setAttribute('aria-busy','true');
   try{
-   if(!pages){const response=await fetch('./page-content.json');if(!response.ok)throw Error('content');pages=await response.json()}
+   if(!pages){const response=await fetch('./page-content.json?v=28');if(!response.ok)throw Error('content');pages=await response.json()}
    if(token!==request||!dialog.open)return;
    for(const [heading,text] of pages[kind].sections){const section=document.createElement('section'),h=document.createElement('h3'),paragraph=document.createElement('p');h.textContent=heading;paragraph.textContent=text;section.append(h,paragraph);body.append(section)}
    if(kind==='privacy'){
     const links=document.createElement('p');
-    for(const [label,url] of [['GitHub Privacy','https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement'],['Google Ads','https://policies.google.com/technologies/ads'],['My Ad Center','https://myadcenter.google.com/']]){const a=document.createElement('a');a.textContent=label;a.href=url;a.target='_blank';a.rel='noopener noreferrer';links.append(a,document.createTextNode(' · '))}body.append(links);
+    for(const [label,url] of [['Cloudflare Privacy','https://www.cloudflare.com/privacypolicy/'],['GitHub Privacy','https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement'],['Google Ads','https://policies.google.com/technologies/ads'],['My Ad Center','https://myadcenter.google.com/']]){const a=document.createElement('a');a.textContent=label;a.href=url;a.target='_blank';a.rel='noopener noreferrer';links.append(a,document.createTextNode(' · '))}body.append(links);
    }
   }catch{if(token===request)body.textContent=t('language.failed')}
   finally{if(token===request)body.removeAttribute('aria-busy')}
