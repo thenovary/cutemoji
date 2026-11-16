@@ -56,6 +56,7 @@ $('#backup-file').onchange=async e=>{const file=e.target.files[0];resetImport();
 $('#cancel-import').onclick=()=>{resetImport();message('#backup-status','backup.cancelled')};
 $('#confirm-import').onclick=()=>{if(!pendingImport)return;try{const next=CutemojiBackup.merge(state(),pendingImport,ITEMS.map(x=>x.t));commit(next);render();resetImport();message('#backup-status','backup.imported')}catch(error){message('#backup-status',error.name==='QuotaExceededError'?'backup.noSpace':error.message.startsWith('backup.')?error.message:'backup.failed')}};
 
+$('#home-link').onclick=e=>{e.preventDefault();view='all';category='all';limit=60;render();$('.results').scrollTop=0;$('.categories').scrollLeft=0};
 const languageSelect=$('#language-select');
 for(const language of I18n.languages){const option=document.createElement('option');option.value=language.code;option.textContent=language.label;languageSelect.append(option)}
 languageSelect.value=I18n.language;
