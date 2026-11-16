@@ -1,0 +1,7 @@
+const PREFIX='cutemoji-'+encodeURIComponent(self.registration.scope)+'-';
+const CACHE=PREFIX+'v23';
+const ASSETS=['./','./index.html','./support.html','./support.css?v=23','./support.js?v=23','./style.css?v=23','./backup.js?v=23','./app.js?v=23','./site-config.js?v=23','./monetization.js?v=23','./i18n.js?v=23','./locales/languages.json','./locales/ko.json','./locales/en.json','./locales/ja.json','./locales/zh-CN.json','./locales/zh-TW.json','./locales/es.json','./locales/pt-BR.json','./locales/de.json','./locales/it.json','./locales/fr.json','./locales/th.json','./locales/vi.json','./locales/id.json','./data.js?v=23','./manifest.webmanifest','./share-image.png','./apple-touch-icon.png','./favicon-16x16.png','./favicon-32x32.png','./favicon-48x48.png','./favicon-96x96.png','./icon-192.png','./icon-512.png'];
+const urls=new Set(ASSETS.map(p=>new URL(p,self.registration.scope).href));
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));self.skipWaiting()});
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith(PREFIX)&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||!urls.has(e.request.url))return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&r.type==='basic'){const copy=r.clone();e.waitUntil(caches.open(CACHE).then(c=>c.put(e.request,copy)))}return r}).catch(()=>caches.match(e.request).then(r=>r||Response.error())))});
