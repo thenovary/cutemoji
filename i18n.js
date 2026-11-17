@@ -16,7 +16,7 @@
   }
   return supported.get('en')||supported.get('ko')||languages[0].code;
  }
- async function init(){languages=await json('./locales/languages.json');fallback=await load('ko');let preferred;try{preferred=localStorage.getItem(KEY)}catch{}if(!languages.some(x=>x.code===preferred))preferred=detect(navigator.languages?.length?navigator.languages:[navigator.language]);try{dictionary=await load(preferred);language=preferred}catch{dictionary=fallback;language='ko'}apply()}
+ async function init(){languages=await json('./locales/languages.json');fallback=await load('ko');let preferred;try{preferred=localStorage.getItem(KEY)}catch{}preferred=document.documentElement.dataset?.locale||preferred;if(!languages.some(x=>x.code===preferred))preferred=detect(navigator.languages?.length?navigator.languages:[navigator.language]);try{dictionary=await load(preferred);language=preferred}catch{dictionary=fallback;language='ko'}apply()}
  async function setLanguage(code){if(!languages.some(x=>x.code===code))throw Error('unsupported_locale');const next=await load(code);dictionary=next;language=code;apply();try{localStorage.setItem(KEY,code);return true}catch{return false}}
  window.I18n={init,t,setLanguage,get language(){return language},get languages(){return languages}};
 })();
